@@ -61,7 +61,7 @@ where
     {
         ffi_wrap!("BinaryViewTypeBase::is_deprecated", unsafe {
             let view_type = &*(ctxt as *mut T);
-            view_type.is_deprecated(&data)
+            view_type.is_deprecated()
         })
     }
 
